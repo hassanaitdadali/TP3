@@ -17,7 +17,7 @@ public class GatewayServiceApplication {
 
         return builder.routes()
 
-                .route(r->r.path("/customers/**").uri("http://localhost:8081/"))
+                .route(r->r.path("/customers/**").uri("http://localhost:8086/"))
                 .route(r->r.path("/products/**").uri("http://localhost:8082/"))
                 .build();
 
